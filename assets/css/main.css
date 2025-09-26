@@ -1,0 +1,16 @@
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.table td a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.table td a:hover {
+  text-decoration: underline;
+}

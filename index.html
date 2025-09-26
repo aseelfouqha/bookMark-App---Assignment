@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <form class="w-75 m-auto mt-5 bookMarkForm">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="siteName" placeholder="site name">
+      <label for="siteName">Site Name</label>
+      <span id="siteNameError" class="error-message"></span>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="siteURL" placeholder="site URL">
+      <label for="siteURL">Site URL</label>
+      <span id="siteURLError" class="error-message"></span>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="siteEmail" placeholder="Site Email">
+      <label for="siteEmail">Site Email</label>
+      <span id="siteEmailError" class="error-message"></span>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="sitePass" placeholder="Site Password">
+      <label for="sitePass">Site Password</label>
+      <span id="sitePassError" class="error-message"></span>
+    </div>
+
+    <button type="submit" class="btn btn-outline-info" id="submitBtn">Add</button>
+    <button type="reset" class="btn btn-outline-primary" id="resetBtn">Reset</button>
+    <button type="button" class="btn btn-outline-danger removeAll">Remove All</button>
+  </form>
+
+ <div class="w-75 m-auto mt-5">
+  <label for="searchInput" class="form-label">Search:</label>
+  <input type="text" id="searchInput" class="search-input form-control" placeholder="Search by site name..."/>
+</div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Site Name</th>
+        <th scope="col">Site URL</th>
+        <th scope="col">Site Email</th>
+        <th scope="col">Site Password</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody class="sites_data"></tbody>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/JS/main.js"></script>
+</body>
+</html>
